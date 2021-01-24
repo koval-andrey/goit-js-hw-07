@@ -44,4 +44,9 @@ const images = [
     },
   ];
 const ulRef = document.querySelector('#gallery');
+const imgList = [...images].reduce((string, item) => 
+string + 
+`<li><img class ='gallary-img' src = '${item.url}' alt = '${item.alt}'></li>`, 
+0, '');
+ulRef.insertAdjacentHTML('afterbegin', imgList);
 

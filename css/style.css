@@ -1,0 +1,8 @@
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallary-img {
+    width: 100%;
+}
