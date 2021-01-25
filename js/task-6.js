@@ -31,7 +31,7 @@ inputRef.addEventListener("focus", (event) => {
   event.target.classList.remove("invalid");
 });
 
-function validedStringBlur(event) {
+function validedStringBlur() {
   if (inputRef.value.length < 6) {
     inputRef.classList.add("invalid");
   } else {
