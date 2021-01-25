@@ -13,14 +13,23 @@
 */
 let counterValue = 0;
 
-const buttonDecrement = document.querySelector('button[data-action="decrement"]');
-const buttonIncrement = document.querySelector('button[data-action="increment"]');
-const spanRef = document.querySelector('#value');
+const buttonDecrement = document.querySelector(
+  'button[data-action="decrement"]'
+);
+const buttonIncrement = document.querySelector(
+  'button[data-action="increment"]'
+);
+const spanRef = document.querySelector("#value");
+counterValue = Number(spanRef.textContent);
 
-buttonIncrement.addEventListener('click', event => handleIncrement);
-buttonDecrement.addEventListener('click', event => handleDecrement);
+buttonIncrement.addEventListener("click", handleIncrement);
+buttonDecrement.addEventListener("click", handleDecrement);
 
-function handleIncrement(event){counterValue +=1;
-spanRef.textContent = counterValue};
-function handleDecrement(event){counterValue -=1;
-spanRef.textContent = counterVaiue;};
+function handleIncrement() {
+  counterValue += 1;
+  spanRef.textContent = counterValue;
+}
+function handleDecrement() {
+  counterValue -= 1;
+  spanRef.textContent = counterVaiue;
+}
