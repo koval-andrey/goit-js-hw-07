@@ -15,5 +15,5 @@ function inputName() {
   spanRef.textContent = inputRef.value;
   if (spanRef.textContent === "") {
     spanRef.textContent = "незнакомец";
-  };
-};
+  }
+}

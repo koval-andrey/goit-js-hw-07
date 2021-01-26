@@ -17,20 +17,21 @@ const ingredients = [
 после чего вставит все li за одну операцию в список ul.ingredients. 
 Для создания DOM-узлов используй document.createElement().*/
 const ingredients = [
-    'Картошка',
-    'Грибы',
-    'Чеснок',
-    'Помидоры',
-    'Зелень',
-    'Приправы',
-  ];
-const ulRef = document.querySelector('#ingredients');
-const arrayIngredients = 
-ingredient => {
-    const liRef = document.createElement('li');
-    liRef.textContent = ingredient;
-    return liRef; 
-}
-const ingredientLiRef = ingredients.map(ingredient => arrayIngredients(ingredient))
+  "Картошка",
+  "Грибы",
+  "Чеснок",
+  "Помидоры",
+  "Зелень",
+  "Приправы",
+];
+const ulRef = document.querySelector("#ingredients");
+const arrayIngredients = (ingredient) => {
+  const liRef = document.createElement("li");
+  liRef.textContent = ingredient;
+  return liRef;
+};
+const ingredientLiRef = ingredients.map((ingredient) =>
+  arrayIngredients(ingredient)
+);
 
 ulRef.append(...ingredientLiRef);

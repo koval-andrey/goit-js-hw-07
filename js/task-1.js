@@ -45,11 +45,11 @@
 Категория: Животные
 Количество элементов: 4
 */
-const ulCategoriesRef = document.querySelector('#categories');
-const liItemRef = document.querySelectorAll('.item');
+const ulCategoriesRef = document.querySelector("#categories");
+const liItemRef = document.querySelectorAll(".item");
 console.log(`В списке ${liItemRef.length} категории`);
 
-liItemRef.forEach(item => {
-    console.log(`Категория: ${item.firstElementChild.textContent}`);
-    console.log(`Количество элиментов: ${item.lastElementChild.children.length}`);
+liItemRef.forEach((item) => {
+  console.log(`Категория: ${item.firstElementChild.textContent}`);
+  console.log(`Количество элиментов: ${item.lastElementChild.children.length}`);
 });

@@ -7,9 +7,11 @@
 <span id="text">Абракадабра!</span>
 */
 
-const inputRef = document.querySelector('#font-size-control');
-const spanRef = document.querySelector('#text');
+const inputRef = document.querySelector("#font-size-control");
+const spanRef = document.querySelector("#text");
 
-inputRef.addEventListener('change', event => )
+inputRef.addEventListener("change", ChangeSize);
 
-function ChangeSize(event){spanRef.style.fontSize}
+function ChangeSize() {
+  spanRef.style.fontSize = `${inputRef.value}px`;
+}
