@@ -20,7 +20,6 @@ const buttonIncrement = document.querySelector(
   'button[data-action="increment"]'
 );
 const spanRef = document.querySelector("#value");
-counterValue = Number(spanRef.textContent);
 
 buttonIncrement.addEventListener("click", handleIncrement);
 buttonDecrement.addEventListener("click", handleDecrement);
@@ -31,5 +30,5 @@ function handleIncrement() {
 }
 function handleDecrement() {
   counterValue -= 1;
-  spanRef.textContent = counterVaiue;
+  spanRef.textContent = counterValue;
 }
